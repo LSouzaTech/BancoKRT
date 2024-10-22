@@ -33,5 +33,6 @@ namespace BancoKRT.Repositories
             var cliente = new Cliente { Documento = documento };
             await _context.DeleteAsync(cliente);
         }
+
     }
 }

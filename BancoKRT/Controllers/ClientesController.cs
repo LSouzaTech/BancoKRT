@@ -58,4 +58,5 @@ namespace BancoKRT.Controllers
         public string Documento { get; set; }
         public decimal Valor { get; set; }
     }
+
 }

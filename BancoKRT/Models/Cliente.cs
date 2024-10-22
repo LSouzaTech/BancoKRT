@@ -6,5 +6,6 @@
         public string Agencia { get; set; } 
         public string Conta { get; set; }
         public decimal LimitePIX { get; set; }
+
     }
 }

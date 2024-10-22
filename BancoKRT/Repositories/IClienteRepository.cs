@@ -9,5 +9,6 @@ namespace BancoKRT.Repositories
         Task AddClienteAsync(Cliente cliente);
         Task UpdateClienteAsync(Cliente cliente);
         Task DeleteClienteAsync(string documento);
+
     }
 }
