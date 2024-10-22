@@ -4,11 +4,11 @@ using BancoKRT.Models;
 
 namespace BancoKRT.Repositories
 {
-    public class ClienteRepository : IClienteRepository
+    public class GestaoLimiteRepository : IClienteRepository
     {
         private readonly IDynamoDBContext _context;
 
-        public ClienteRepository(IAmazonDynamoDB client)
+        public GestaoLimiteRepository(IAmazonDynamoDB client)
         {
             _context = new DynamoDBContext(client);
         }
@@ -33,6 +33,5 @@ namespace BancoKRT.Repositories
             var cliente = new Cliente { Documento = documento };
             await _context.DeleteAsync(cliente);
         }
-
     }
 }
